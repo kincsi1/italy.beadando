@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marton Kincső">
+    <meta name="description" content="Olaszország ajánlott látnivalók">
+    <meta name="copyright" content="only for academic purposes">
+    <title>Travel</title>
+	 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+	 <link rel="stylesheet" href="style.css">
+	 <script src="javascript/jquery-3.7.1.js"></script>
+	 <script src="javascript/galleria-1.6.1/dist/galleria.js"></script>
+	 <script src="javascript/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+	 <script>$(document).ready(function () {$('#images').galleria({width : 500, height : 500});});</script>
+	 <script src="javascript/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+	 <script>
+		$(document).ready(function(){$("#myform").validate({
+				rules:{
+					name:{
+						required: true,
+						minlength: 2
+					},
+                    phone:{
+						required: true,
+						pattern: true
+					},
+					emal:{
+						required: true,
+						email: true
+					},
+					
+                    password:{:"required", minlength:8}
+                    datums:"required",
+					varosok:"required",
+					igen:"required"
+				},
+
+				messages:{
+					namee:"<br> Kérjük, írja meg a teljes nevét!",
+					phone:"<br> Kérjük, írja a telefonszámt a példának megfelelően!",
+					emal:"<br> Kérjük, írja valós legyen az e-mail címe!",
+                    passwor:"<br> Kérem legalább 8 karakterből álljon a jelszava!",
+                    datums:"<br> Kérem adjon meg egy dátumot!",
+					varosok:"<br> Kérem válasszon várost",
+					felt:"<br> El kell fogadnia a feltételeket!",
+				},
+			});
+		});
+	</script>
+</head>
+<body>
+   <header>
+        <h1>Olaszország</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+				<li><a class="active" class="fogomb" href="fooldal.html"> Olaszország </a></li>
+                <li><a href="firenze.html" >Firenze</a></li>
+                <li><a href="milano.html"> Milánó</a></li>
+                <li><a href="roma.html"> Róma </a></li>
+                <li><a href="velence.html"> Velence </a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2 class="cikkcim">Miért ideális úticél Olaszország?</h2>
+            <p class="tartalom">Olaszország számos kulturális és történelmi látnivalóval 
+								rendelkezik, amelyeket érdemes meglátogatni. Az ország gazdag 
+								történelmi örökséggel rendelkezik, amelyet az ókori rómaiak, a 
+								reneszánsz művészek és a katolikus egyház hagyományai határoznak 
+								meg. Az ország híres a világhírű múzeumairól, a művészeti galériáiról, 
+								a történelmi épületeiről, a katedrálisairól és a bazilikáiról. Az 
+								országban található Velence városa is egy különleges hely, amelyet 
+								érdemes meglátogatni. Velence híres a csatornáiról, a történelmi 
+								épületeiről, a múzeumairól, a kávézóiról és az éttermeiről.</p>
+								<p><a href="urlap.html"> Űrlap, hogy Önhöz illő úticélt válasszon. </a></p>
+        </article>
+        <aside>
+            <h2>Tudta?</h2>
+            <p> Tudtad, hogy Itália a világ legnagyobb sajtgyártója, és a pizza szülőhazája is egyben</p>
+        </aside>
+
+        <article class="varos">
+            <img src="images/italy.png" alt="Olaszország" class="varos" >
+            <p class="cim">Olaszország</p>
+            <p class="tartalom">Az olaszországi látogatás számos élményt kínál az utazóknak. 
+								Az ország gazdag történelemmel, kultúrával és művészettel rendelkezik. 
+								Az olasz városokban található műemlékek, múzeumok és galériák világhírűek, 
+								és az ország számos kulturális és történelmi helyszínt kínál. 
+								Az olasz konyha világszerte híres, és az olasz borok is nagy elismerést 
+								élveznek. Az országban számos természeti csoda található, például a 
+								tengerpartok, a hegyek és a tavak. Az olaszok vendégszerető emberek, 
+								és az ország hangulata élénk és pezsgő. Az olaszországi látogatás 
+								egyedülálló élményt nyújt az utazóknak, és érdemes legalább egyszer 
+								az életben meglátogatni.</p>					
+        </article>
+		
+		
+		<article id="images" class="galleria">
+		
+		<img src="images/firenze.jpg" alt="A firenzei Dóm" class="varos" >
+		<img src="images/velence.jpg" alt="Velence" class="varos"  >
+		<img src="images/roma.jpg" alt="Colosseum" class="varos">
+		<img src="images/milno.jpg" alt="Milánói katedrális" class="varos" >
+		
+		</article>		
+		<aside>
+		<p>Ajánlat kérés utazáshoz + regisztráció:</p>
+		<form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
+                <label>
+                    A teljes neved: <br>
+                    <input type="text" name="name" id="name">
+                </label><br>
+				<label>
+                    A telefonszámod: (Ilyen formátumban: +36-20/123-4567) <br>
+                    <input type="tel" name="phone" id="phone" pattern="+{2}-{2}/{3}-{4}">
+                </label><br>
+                <label>
+                    Az emailcímed: <br>
+                    <input type="email" id="email" name="email">
+                </label><br>
+				<label>Jelszó: <br>
+					<input type="password" id="password" name="password">
+				</label><br>
+                <label>
+                    Hova szeretnél utazni? <br>
+                    <select name="varosok" size=1>
+					<option value="Milánó">Milánó</option>
+					<option value="Róma" selected>Róma</option>
+					<option value="Firenze">Firenze</option>
+					<option value="Velence">Velence</option>
+					</select>
+                </label><br>
+				<label>
+                    Válasz indulási dátumot: <br>
+                    <input type="date" id="datums" name="datums">
+                </label><br>
+				<label>
+                    Válasz visszaérkezési dátumot: <br>
+                    <input type="date" id="datums" name="datums">
+                </label><br>
+				<label>
+                    Elfogadod az Adatkezelési nyilatkozatot?<br>
+                    <input type="checkbox" id="igen" name="igen" value="Igen">Igen.
+                </label><br>
+                <label><input type="submit" value="Elküldés" id="submitbutton"></label>
+            </form>
+
+			<h2>Bucket list:</h2>
+			<form method="post" action="#">
+			
+			<label><input type="checkbox" value="Velence">Velence</label><br>
+			<label><input type="checkbox" value="Firenze">Firenze</label><br>
+			<label><input type="checkbox" value="Milano">Milano</label><br>
+			<label><input type="checkbox" value="Roma">Róma</label><br>
+			<label><input type="reset" value="Visszaállítás"></label>
+			</form>
+        </aside>
+    </div>
+	<footer>
+        <p>Kizárólag oktatási célokat szolgál<br>&copy; Marton Kincső 2023.</p>
+    </footer>
+</body>
+</html>

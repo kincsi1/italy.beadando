@@ -1,0 +1,9 @@
+Készítette: Marton Kincső
+
+A weboldalamon érdekességek találhatóak pár olasz városról turistáknak. Mind a 4 városhoz van egy 3 napos útiterv is.
+A JS kódom az urlap.html oldalon található, ez a főoldalről érhető el.
+A célja a könnyebb utazási cél választás. A válaszok pontok lesznek és ezt értekeli ki és ad eredményt.
+Roboto betűtípust használtam mindenhol.
+
+A szöveget meg a képeket Bing AI-val generáltam.
+

@@ -1,0 +1,208 @@
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto&displ
+		ay=swap" rel="stylesheet">
+		<style> h3{font-family:'Roboto', 'Helvetica';} </style>
+		src: url("betu/RobotoMono-Regular.ttf");
+	</link>
+	
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	background-color: rgb(36, 79, 38);
+    padding: 0px;
+    margin: 0px;
+	font-family: Roboto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+			height: fit-content;
+			margin: 1%;
+}
+
+
+header {
+    padding: 2px;
+    margin: 0px;
+    background-color: rgb(170, 174, 127);
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(0,0,0);
+}
+
+article {
+    flex: 1 1 100%;
+    background-color: rgb(246, 232, 234);
+    padding: 0px 8px;
+    color: #ffffff;
+    text-align: justify;
+    border-radius: 15px;
+	color: rgb(0,0,0)
+}
+}
+
+p, form
+{
+	font-size: 20px;
+}
+aside {
+    flex: 1 1 100%;
+    background-color: rgb(145, 196, 153);
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+
+footer {
+    background-color: rgb(170, 174, 127);
+    color: rgb(0,0,0);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*====MENU====*/
+
+nav {
+    padding: 8px;
+    flex: 1 1 100%;
+}
+
+nav ul {
+	display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 0 px;
+    padding: 10px; 
+	height: fit-content;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 93, 141);
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: rgb(190, 183, 223);
+}
+
+nav li a:hover {
+    background-color: rgb(216, 180, 226);
+}
+li a.fogomb
+{
+	background-color:rgb(65, 93, 67);
+}
+
+img.varos {
+    float: right;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+	width: 200px;
+	height: auto;
+}
+
+h2.cikkcim {
+    display: table;
+    text-align: left;
+	font-weight: bold;
+}
+
+p.tartalom {
+    /*padding: 3px;*/
+    text-indent: 1.1em;
+}
+p.cim
+{
+	font-weight: bold;
+}
+
+.galleria
+{ text-align: center;
+ margin: auto;
+ width: 90vw;
+ height: 90vw;
+ }
+article#images {
+    height: fit-content;
+}
+#eredmeny{
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    nav {
+        flex-basis: 98%;
+    }
+    article {
+        flex-basis: 73%;
+    }
+    aside.tudta {
+        flex-basis: 48%;
+    }
+    aside.bucketlist {
+        flex-basis: 48%;
+    }
+    article.varos {
+        flex-basis: 100%;
+    }
+	article.urlap
+	{
+		flex-basis:100%;
+	}
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    nav {
+        flex-basis: 98%;
+    }
+    article {
+        flex-basis: 48%;
+    }
+    article {
+        flex-basis: 48%;
+    }
+    aside {
+        flex-basis: 23%;
+    }
+    aside.bucketlist {
+        flex-basis: 23%;
+    }
+    article.tudta {
+        flex-basis: 73%;
+    }
+}

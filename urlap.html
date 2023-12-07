@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>Travel</title>
+	 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+	 <link rel="stylesheet" href="style.css">
+	 <script src="javascript/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+   <header>
+        <h1>Velence</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+				<li><a class="fogomb" href="fooldal.html"> Olaszország </a></li>
+                <li><a href="firenze.html">Firenze</a></li>
+                <li><a href="milano.html"> Milánó</a></li>
+                <li><a href="roma.html"> Róma </a></li>
+                <li><a href="velence.html"> Velence </a></li>
+				<li><a href="#" class="active"> Űrlap, hogy Önhöz illő úticélt válasszon. </a></li>
+            </ul>
+        </nav>
+		</div>
+		
+		<div class="container">
+        <article class="urlap">
+			 <h2>Melyik úticél illik a leginkább Önhöz?</h2>
+            <form method="post" action="#" id="quizz" novalidate>
+                <div id="page1">
+                <p>Mi a teljes neve?</p>
+                <label>Name: <input type="text" name="nameee" id="neve"></label>
+                </div>
+
+                <div id="page2"  style="display: none;">
+                <p>Melyik szó írja le Önt a legjobban?</p><br>
+                <label><input type="checkbox" name="a" id="k">kalandvágyó</label><br>
+                <label><input type="checkbox" name="b" id="ny">nyugodt</label><br>
+                <label><input type="checkbox" name="c" id="s">sportos</label><br>
+                <label><input type="checkbox" name="d" id="a">álmodozó</label><br>
+                </div>
+
+                <div id="page3"  style="display: none;">
+                <p>Visszparton jobban érezné magát?</p><br>
+                <label><input type="radio" name="gomb" value="yes" id="i">Igen.</label><br>
+                <label><input type="radio" name="gomb" value="no" id="n">Nem.</label><br>
+                </div>
+
+                <div id="page4"  style="display: none;">
+                <p>Hova utazna a legszívesebben?</p><br>
+                <label><select name="legordulo" size="1" id="lista">
+                        <option value="roma" selected>Róma</option>
+                        <option value="firenze">Firenze</option>
+                        <option value="velence">Velence</option>
+                        <option value="milano">Milánó</option>
+                </select></label><br>
+                </div>
+				
+				<div id="page5" style="display: none;">
+                <p>Volt már Olaszországban?</p><br>
+                <label><input type="radio" name="e" id="yes">Igen, bejártam az egészet.</label><br>
+                <label><input type="radio" name="e" id="roma">Csak Rómában.</label><br>
+                <label><input type="radio" name="e" id="few">Cak pár városkában.</label><br>
+                <label><input type="radio" name="e" id="no">Még soha.</label><br>
+                </div>
+
+
+                <div id="page6" style="display: none;">
+                <p>Mennyire tud olaszol kommunikálni? (0-10)</p><br>
+                <label>0 <input type="range" max="10" name="rating" min="0" id="olasz"> 10</label>
+                </div>
+
+                <div id="page7" style="display: none;">
+                <p>Mikor tud indulni?</p><br>
+                <label><input type="date" name="datum"></label><br>
+                </div>
+
+                <div id="page8" style="display: none;">
+                <p>Mi az email címe?</p>
+                <label>Email: <input type="email" name="email"></label><br>
+                </div>
+                <p></p>
+                <label>
+                    <input type="button" value="Következő" id="nextb">
+                </label>
+            </form><br>
+            <p id="kiiras"></p>
+            <figure><img id="eredmeny" src="images/italy.png" alt="városkép" class="varos"></figure>
+		</article>
+		</div>
+    </div>
+	<footer>
+        <p>Kizárólag oktatási célokat szolgál<br>&copy; Marton Kincső 2023.</p>
+    </footer>
+	<script src="javascript/java.js"></script>
+</body>
+</html>
